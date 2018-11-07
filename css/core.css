@@ -1,0 +1,81 @@
+html, body {
+	margin: 0;	
+	padding: 0;
+}
+
+body {
+	background: #171717;
+	color: #999;
+	font: 100%/18px helvetica, arial, sans-serif;
+}
+
+a {
+	color: #2fa1d6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;	
+}
+
+#canvas-container {
+	background: #000 url(../img/bg.jpg);
+    height: 100%;
+	position: absolute;
+    width: 100%;
+	z-index: 2;
+}
+
+#canvas-container .text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#canvas-container .text p {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    font-size: 7em;
+    color: #fff;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 3
+  }
+  
+  p:hover {
+    color: rgb(255, 219, 59);
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+  /*glow for webkit*/
+  
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 219, 59), 0 0 70px rgb(255, 219, 59), 0 0 80px rgb(255, 219, 59), 0 0 100px rgb(255, 219, 59), 0 0 150px rgb(255, 219, 59);
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(255, 219, 59), 0 0 35px rgb(255, 219, 59), 0 0 40px rgb(255, 219, 59), 0 0 50px rgb(255, 219, 59), 0 0 75px rgb(255, 219, 59);
+    }
+  }
+		
+canvas {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+
+canvas:active {
+	cursor: pointer;
+}
