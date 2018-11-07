@@ -36,7 +36,7 @@ a:hover {
     align-items: center
 }
 
-#canvas-container .text p {
+#canvas-container .text div p:nth-child(1), #canvas-container .text div p:nth-child(2) {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
     font-size: 7em;
@@ -51,8 +51,14 @@ a:hover {
     cursor: pointer;
     z-index: 3
   }
+
+  #canvas-container .text div p:last-child {
+      color: #fff;
+      z-index: 3;
+      text-align: center;
+  }
   
-  p:hover {
+  #canvas-container .text div p:hover {
     color: rgb(255, 219, 59);
     -webkit-animation: none;
     -moz-animation: none;
@@ -67,6 +73,16 @@ a:hover {
     to {
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(255, 219, 59), 0 0 35px rgb(255, 219, 59), 0 0 40px rgb(255, 219, 59), 0 0 50px rgb(255, 219, 59), 0 0 75px rgb(255, 219, 59);
     }
+  }
+
+  #canvas-container .footer {
+      position: absolute;
+      bottom: 5%;
+      width: 100%;
+  }
+
+  #canvas-container .footer p {
+      text-align: center;
   }
 		
 canvas {
